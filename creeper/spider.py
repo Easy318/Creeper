@@ -8,7 +8,6 @@ from colorama import init, Fore
 from . import settings
 from collections import defaultdict
 import pandas as pd
-import numpy as np
 
 
 class Spider:
