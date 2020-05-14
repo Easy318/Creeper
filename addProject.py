@@ -1,9 +1,10 @@
 '''把该项目路径添加到当前python环境项目目录里'''
 from distutils.sysconfig import get_python_lib
 from pathlib import Path
+import os
 
 # 项目根目录
-project_path = Path(__file__).parent
+project_path = Path(os.path.dirname((os.path.abspath(__file__))))
 
 # pth文件目录
 site_packages_path = Path(get_python_lib())

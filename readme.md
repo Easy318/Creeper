@@ -3,23 +3,22 @@
 **运行:**
 
 ```python
+# 已失效
 python creep_start.py
 ```
 
-就可以爬取到目标站点100+小故事,默认放在fiction_data目录下,以后可能会有扩展
+~~就可以爬取到目标站点100+小故事,默认放在fiction_data目录下,以后可能会有扩展~~
 
 ## 更新
 
 更新时间: 2018年12月22日13:03:05
-现在不只能爬取100个小故事了!!!
-
-**新增:**
 
 - 理论上可以爬取历趣网下所有app的评论
 - 优化了爬虫框架结构,更方便修改
 - 增加了测试
 - 删除了 creep_start.py模块
 - 如果爬取失败,请检查网络连接并重新尝试或联系作者
+- 爬取100个小故事已失效
 
 ## 使用
 
@@ -45,7 +44,7 @@ from creeper.spider import LiQuSpider
 
 url = "https://www.liqucn.com/comment/28740.shtml"
 spider = LiQuSpider(url)
-spider.run()
+spider.parse()
 # 参数为保存的文件名
 spider.to_excel("同程旅游App评论")
 ```
